@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>User Accounts Page</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/site-title-carousel/WEBpic.jpg">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Feathericon CSS -->
+        <link rel="stylesheet" href="assets/css/feathericon.min.css">
+		
+		<!-- Datatables CSS -->
+		<link rel="stylesheet" href="assets/plugins/datatables/datatables.min.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+		
+		<!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+    </head>
+    <body>
+	
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left">
+                    <a href="index.html" class="logo">
+						<img src="/assets/site-title-carousel/WEBpic.jpg" alt="Logo">
+					</a>
+					<a href="index.html" class="logo logo-small">
+						<img src="/assets/site-title-carousel/WEBpic.jpg" alt="Logo" width="30" height="30">
+					</a>
+                </div>
+				<!-- /Logo -->
+				
+				<a href="javascript:void(0);" id="toggle_btn">
+					<i class="fe fe-text-align-left"></i>
+				</a>
+				
+				<div class="top-nav-search">
+					<form>
+						<input type="text" class="form-control" placeholder="Search here">
+						<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+				
+				<!-- Mobile Menu Toggle -->
+				<a class="mobile_btn" id="mobile_btn">
+					<i class="fa fa-bars"></i>
+				</a>
+				<!-- /Mobile Menu Toggle -->
+				
+				<!-- Header Right Menu -->
+				<ul class="nav user-menu">
+
+					<!-- Notifications -->
+					<li class="nav-item dropdown noti-dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fe fe-bell"></i> <span class="badge badge-pill">3</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Notifications</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/doctors/doctor-thumb-01.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Dr. Remond Agboji</span> Schedule <span class="noti-title">her appointment</span></p>
+													<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient1.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Asamoah Gifty</span> has booked her appointment to <span class="noti-title">Dr. Ruby Perrin</span></p>
+													<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient2.jpg">
+												</span>
+												<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Jacob Tanko</span> sent a amount of $210 for his <span class="noti-title">appointment</span></p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="#">
+											<div class="media">
+												<span class="avatar avatar-sm">
+													<img class="avatar-img rounded-circle" alt="User Image" src="assets/img/patients/patient3.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Benjamin Boabeng</span> send a message <span class="noti-title"> to his doctor</span></p>
+													<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="#">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+					
+					<!-- User Menu -->
+					<li class="nav-item dropdown has-arrow">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<span class="user-img"><img class="rounded-circle" src="assets/img/profiles/avatar-01.jpg" width="31" alt="Ryan Taylor"></span>
+						</a>
+						<div class="dropdown-menu">
+							<div class="user-header">
+								<div class="avatar avatar-sm">
+									<img src="assets/img/profiles/avatar-01.jpg" alt="User Image" class="avatar-img rounded-circle">
+								</div>
+								<div class="user-text">
+									<h6>Prince Opare S</h6>
+									<p class="text-muted mb-0">Administrator</p>
+								</div>
+							</div>
+							<a class="dropdown-item" href="profile.html">My Profile</a>
+							<a class="dropdown-item" href="settings.html">Settings</a>
+							<a class="dropdown-item" href="login.html">Logout</a>
+						</div>
+					</li>
+					<!-- /User Menu -->
+					
+				</ul>
+				<!-- /Header Right Menu -->
+				
+            </div>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+          <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="menu-title"> 
+								<span>Main</span>
+							</li>
+							<li> 
+								<a href="index.html"><i class="fe fe-home"></i> <span>Dashboard</span></a>
+							</li>
+							<li> 
+								<a href="bookings-list.html"><i class="fe fe-layout"></i> <span>Bookings</span></a>
+							</li>
+							<li class="active"> 
+								<a href="user-list.html"><i class="fe fe-user"></i> <span>Users</span></a>
+							</li>
+							<li> 
+								<a href="testimonials.html"><i class="fe fe-star-o"></i> <span>Testimonials</span></a>
+							</li>
+							<li> 
+								<a href="transactions-list.html"><i class="fe fe-activity"></i> <span>Transactions</span></a>
+							</li>
+							<li> 
+								<a href="settings.html"><i class="fe fe-vector"></i> <span>Settings</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-document"></i> <span> Reports</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="invoice-report.html">Invoice Reports</a></li>
+								</ul>
+							</li>
+							<li class="menu-title"> 
+								<span>Pages</span>
+							</li>
+							<li> 
+								<a href="profile.html"><i class="fe fe-user-plus"></i> <span>Profile</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-document"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="login.html"> Login </a></li>
+									<li><a href="register.html"> Register </a></li>
+									<li><a href="forgot-password.html"> Forgot Password </a></li>
+									<li><a href="lock-screen.html"> Lock Screen </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fe fe-warning"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="error-404.html">404 Error </a></li>
+									<li><a href="error-500.html">500 Error </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="blank-page.html"><i class="fe fe-file"></i> <span>Blank Page</span></a>
+							</li>
+							</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+			<!-- /Sidebar -->
+			
+			<!-- Page Wrapper -->
+            <div class="page-wrapper">
+                <div class="content container-fluid">
+				
+					<!-- Page Header -->
+					<div class="page-header">
+						<div class="row">
+							<div class="col-sm-12">
+								<h3 class="page-title">User Accounts</h3>
+								<ul class="breadcrumb">
+									<li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+									<li class="breadcrumb-item"><a href="javascript:(0);">Users</a></li>
+									<li class="breadcrumb-item active">User Accounts</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /Page Header -->
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card card-shadow">
+								<div class="card-body">
+									<div class="table-responsive">
+										<div class="table-responsive">
+										<table class="datatable table table-hover table-center mb-0">
+											<thead>
+												<tr>
+													<th>Account ID</th>
+													<th>User Accounts</th>
+													<th>Age</th>
+													<th>Address</th>
+													<th>Phone</th>
+													<th>Login Date</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>#PT001</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient1.jpg" alt="User Image"></a>
+															<a href="profile.html">Madam Seifah Adjdei </a>
+														</h2>
+													</td>
+													<td>29</td>
+													<td>2344  Kumasi, Ghanan, 28681</td>
+													<td>024632910</td>
+													<td>20 Oct 2020</td>
+												</tr>
+												<tr>
+													<td>#PT002</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="/carbook-master/images/prince.jpeg" alt="User Image"></a>
+															<a href="profile.html">Shan Mande </a>
+														</h2>
+													</td>
+													<td>23</td>
+													<td>4026  Dansoman, Accra,  04011</td>
+													<td>0207729994</td>
+													<td>22 Oct 2020</td>
+													
+												</tr>
+												<tr>
+													<td>#PT003</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient3.jpg" alt="User Image"></a>
+															<a href="profile.html">Mensah Kelly</a>
+														</h2>
+													</td>
+													<td>33</td>
+													<td>Community 20, Tema, Ghana, 46733</td>
+													<td>0260724776</td>
+													<td>21 Oct 2021</td>
+													
+												</tr>
+												<tr>
+													<td>#PT004</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient4.jpg" alt="User Image"></a>
+															<a href="profile.html"> Michelle Adoma</a>
+														</h2>
+													</td>
+													<td>37</td>
+													<td>2037 Boaben , Ahafo, Ghana, 46733</td>
+													<td>0504368687</td>
+													<td>21 Sep 2021</td>
+													
+												</tr>
+												<tr>
+													<td>#PT005</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient5.jpg" alt="User Image"></a>
+															<a href="profile.html">Reina Badu</a>
+														</h2>
+													</td>
+													<td>42</td>
+													<td>888  Tamale, market Squre, Ghana,33012</td>
+													<td>055482078</td>
+													<td>18 Jan 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT006</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient6.jpg" alt="User Image"></a>
+															<a href="profile.html">Elssien Mariam</a>
+														</h2>
+													</td>
+													<td>41</td>
+													<td>Camp city, Mall, Cape Coast, 42101</td>
+													<td>0235314562</td>
+													<td>18 Feb 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT007</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient7.jpg" alt="User Image"></a>
+															<a href="profile.html"> Eunice Buabeng</a>
+														</h2>
+													</td>
+													<td>25</td>
+													<td>Market area, Koforidua, Ghana, 94103</td>
+													<td>0557222603</td>
+													<td>24 Feb 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT008</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="/bootstrap-5-admin-dashboard-template-main/newbranchpage/image/boss.jpeg" alt="User Image"></a>
+															<a href="profile.html"> Daniel Dankwah</a>
+														</h2>
+													</td>
+													<td>21</td>
+													<td>4914  Amanten, Roman School,Brong East,Ghana, 07055</td>
+													<td>020377394</td>
+													<td>7 Mar 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT009</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="/bootstrap-5-admin-dashboard-template-main/newbranchpage/image/macho.jpeg" alt="User Image"></a>
+															<a href="profile.html">Brown Manu</a>
+														</h2>
+													</td>
+													<td>27</td>
+													<td>1299  Accra, Kasua, Ghana, 32405</td>
+													<td>050358445</td>
+													<td>11 Apr 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT010</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient10.jpg" alt="User Image"></a>
+															<a href="profile.html">Robert Rhodes</a>
+														</h2>
+													</td>
+													<td>25</td>
+													<td>1214  East lagon, Accra, 92014</td>
+													<td>0278582595</td>
+													<td>12 Apr 20222</td>
+													
+												</tr>
+												<tr>
+													<td>#PT011</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient11.jpg" alt="User Image"></a>
+															<a href="profile.html">Ziemeh Paul</a>
+														</h2>
+													</td>
+													<td>29</td>
+													<td>4566  Guggisburg  ave, Kole Bu, Accra, 80202</td>
+													<td>0263077075</td>
+													<td> 15 Apr 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT012</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient12.jpg" alt="User Image"></a>
+															<a href="profile.html">Farid Mohammed</a>
+														</h2>
+													</td>
+													<td>29</td>
+													<td>1996  Zongo Lane, Accra, Ghana, 68310</td>
+													<td>0202231492</td>
+													<td>25 Apr 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT013</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient13.jpg" alt="User Image"></a>
+															<a href="profile.html">Tracy Dammn</a>
+														</h2>
+													</td>
+													<td>32</td>
+													<td>4211  Lasvigas hotel, Kasoa,  98591</td>
+													<td>7737265795</td>
+													<td>3 May  2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT014</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient14.jpg" alt="User Image"></a>
+															<a href="profile.html"> BenJami Finch</a>
+														</h2>
+													</td>
+													<td>23</td>
+													<td>186  Karneshi, Accra, Ghana 27409</td>
+													<td>0262314023</td>
+													<td>5 Amy 2022</td>
+													
+												</tr>
+												<tr>
+													<td>#PT015</td>
+													<td>
+														<h2 class="table-avatar">
+															<a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/patients/patient15.jpg" alt="User Image"></a>
+															<a href="profile.html">Jessica Apereku</a>
+														</h2>
+													</td>
+													<td>10</td>
+													<td>4672  Airport, Accra, Ghana, 60173</td>
+													<td>0222788201</td>
+													<td>10 May 2022</td>
+													
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									</div>
+								</div>
+							</div>
+						</div>			
+					</div>
+					
+				</div>			
+			</div>
+			<!-- /Page Wrapper -->
+		
+        </div>
+		<!-- /Main Wrapper -->
+		
+		<!-- jQuery -->
+        <script src="assets/js/jquery-3.2.1.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+        <script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		
+		<!-- Datatables JS -->
+		<script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+		<script src="assets/plugins/datatables/datatables.min.js"></script>
+		
+		<!-- Custom JS -->
+		<script  src="assets/js/script.js"></script>
+		
+    </body>
+
+<!-- Mirrored from dreamguys.co.in/demo/doccure/admin/patient-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 30 Nov 2019 04:12:52 GMT -->
+</html>

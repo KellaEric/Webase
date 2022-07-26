@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/slide1.jpg);
+    background-size: cover;
+    background-position: center; 
+    animation: change 30s infinite ease-in-out;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 22%;
+}   
+.container h1{
+    color: #fff;
+}
+ul li a:hover{
+    color: #82f082;
+}
+.register-btn:hover{
+    background: #82f082;
+}
+.button{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    border: 1px solid #82f082                           ;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 10px;
+}
+.btn:hover{
+    color: #82f082;
+}
+@keyframes change{
+    10%
+    {
+        background-image: url(alex-suprun.jpg); 
+    }
+    20%
+    {
+        background-image: url(whitelamb.jpg);
+    }
+    40%
+    {
+        background-image: url(pexels3.jpg);
+    }
+    80%
+    {
+        background-image: url(pexels2.jpg);
+    }
+}
+@media only screen and (max-width: 700px) {
+   nav{
+       position: fixed;
+       top: 0;
+       z-index: 100;
+       display: inline-block;
+       width: 100%;
+       padding: 100px 7% 20%;
+       background: #000;
+       text-align: right;
+       font-size: small;
+       background: transparent;
+   }
+   .header h1{
+       position: fixed;
+       bottom: 40%;
+       z-index: 100;
+       display: inline-block;
+       width: 100%;
+       padding: 80px 7% 5%;
+       background: #000;
+       text-align: center;
+       background: transparent;
+       font-size: 20px;
+   }
+   nav.nav-links li{
+       margin: 10px 0;
+       display: block;
+   }
+   .btn{
+       margin: 30px 0 20px;
+       display: inline-block;
+       
+   }
+}
